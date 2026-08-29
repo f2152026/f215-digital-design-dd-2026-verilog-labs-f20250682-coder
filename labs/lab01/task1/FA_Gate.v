@@ -18,8 +18,8 @@ module FA_Gate(
 
   // Reordered gate instantiations for Task (b)
   or  (cout, pc1, pc2);
-  and (pc2, cin, ps);
   xor (sum, cin, ps);
+  and (pc2, cin, ps);
   and (pc1, a,   b);
   xor (ps,  a,   b);
 
